@@ -1,6 +1,12 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+
+  // router.baseの設定
+  router: {
+    base: '/syste-testx500-fe',
+  },
+
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -9,6 +15,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    base: {
+      href: 'router.base',
+    },
     titleTemplate: '%s - syte-testx500-fe',
     title: 'syte-testx500-fe',
     htmlAttrs: {
